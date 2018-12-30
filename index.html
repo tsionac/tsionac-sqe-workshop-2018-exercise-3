@@ -28,23 +28,42 @@
                         <label>Enter code here</label>
                     </div>
                 </td>
+
+            </tr>
+            <tr>
                 <td>
-                    <div>
-                        <label>Parsed code here</label>
+                    <div class="textAreaWrapper">
+                        <textarea id="codePlaceholder" title="Enter code here">
+    function foo(x, y, z){
+    let a = x + 1;
+    let b = a + y;
+    let c = 0;
+
+    if (b < z) {
+        c = c + 5;
+    } else if (b < z * 2) {
+        c = c + x + 5;
+    } else {
+        c = c + z + 5;
+    }
+
+    return c;
+}
+
+
+
+                        </textarea>
                     </div>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <div class="textAreaWrapper">
-                        <textarea id="codePlaceholder" title="Enter code here"></textarea>
+                    <div>
+                        <label>Graph appearance</label>
                     </div>
+                    <div id="graphAppearance"></div>
                 </td>
-                <td>
-                    <div class="textAreaWrapper">
-                        <textarea id="parsedCode" title="Parse code"></textarea>
-                    </div>
-                </td>
+
             </tr>
             <tr>
                 <td>

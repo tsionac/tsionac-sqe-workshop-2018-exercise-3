@@ -5,6 +5,7 @@
     "main": "index.js",
     "scripts": {
         "start": "npm run start:dev",
+        "js2flowchart": "js2flowchart",
         "start:dev": "webpack --watch",
         "test:watch": "mocha-webpack --watch",
         "test": "mocha-webpack --webpack-config webpack.test.config.js --reporter=json",
@@ -21,8 +22,18 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
+        "cat": "^0.2.0",
+        "d3-graphviz": "^2.6.0",
+        "dot": "^1.1.2",
+        "esgraph": "^0.3.0",
         "esprima": "^4.0.0",
-        "jquery": "^3.3.1"
+        "file": "^0.2.2",
+        "flowchart.js": "^1.11.3",
+        "jquery": "^3.3.1",
+        "js2flowchart": "^1.1.7",
+        "react": "^16.7.0",
+        "viz": "0.0.1",
+        "viz.js": "^2.1.2"
     },
     "devDependencies": {
         "cross-env": "^5.2.0",
